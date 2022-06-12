@@ -120,7 +120,7 @@
          let b = Number(document.getElementById("canhb").value)
          let c = Number(document.getElementById("canhc").value)
 
-         if (a>0 && b>0 && c>0){
+         if (a>0 && b>0 && c>0 && a+b>c && a+c>b && b+c>a){
             if (a==c && a==b ){
                 document.getElementById("hienthi3e").innerHTML = "Tam giác abc đều"
             }else if(a==c || a==b ||b==c){
