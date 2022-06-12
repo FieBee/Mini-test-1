@@ -119,25 +119,26 @@
          let a = Number(document.getElementById("canha").value)
          let b = Number(document.getElementById("canhb").value)
          let c = Number(document.getElementById("canhc").value)
+         let hienthi = document.getElementById("hienthi3e")
 
          if (a>0 && b>0 && c>0 && a+b>c && a+c>b && b+c>a){
             if (a==c && a==b ){
-                document.getElementById("hienthi3e").innerHTML = "Tam giác abc đều"
+                hienthi.innerHTML = "Tam giác abc đều"
             }else if(a==c || a==b ||b==c){
-                document.getElementById("hienthi3e").innerHTML = "Tam giác abc cân"
+                hienthi.innerHTML = "Tam giác abc cân"
             }else if ( Math.pow(a,2)==Math.pow(c,2)+Math.pow(c,2)
                     || Math.pow(b,2)==Math.pow(a,2)+Math.pow(c,2)
                     || Math.pow(c,2)==Math.pow(a,2)+Math.pow(b,2)){
                 if (a==c || a==b ||b==c){
-                    document.getElementById("hienthi3e").innerHTML = "Tam giác abc vuông cân"
+                    hienthi.innerHTML = "Tam giác abc vuông cân"
                 }else {
-                document.getElementById("hienthi3e").innerHTML = "Tam giác abc vuông"
+                    hienthi.innerHTML = "Tam giác abc vuông"
                 }
             }else {
-             document.getElementById("hienthi3e").innerHTML = "abc là tam giác"
+                hienthi.innerHTML = "abc là tam giác"
             }
          }else {
-             document.getElementById("hienthi3e").innerHTML = ("Ét ô étt! Ét ô étt! >>?")
+             hienthi.innerHTML = ("Ét ô étt! Ét ô étt! >>?")
          }
      }
 </script>
